@@ -11,11 +11,14 @@ export const AppContextProvider = (props) => {
 
     const [isSearched, setIsSearched] = useState(true);
 
+    const [jobs, setJobs] = useState([])
+
     const value ={
         searchFilter,
         setSearchFilter,
         isSearched, 
         setIsSearched,
+        jobs, setJobs
     }
 
     return (
